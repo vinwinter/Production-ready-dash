@@ -98,7 +98,7 @@ bar_fig.update_layout(title_x=0.5, margin={"r":0,"t":30,"l":30,"b":30})
 
 
 
-
+link_picture = "http://"+socket.gethostbyname(socket.gethostname())+"/static/mortgage.png"
 
 
 fontawesome = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
@@ -109,7 +109,7 @@ appBeautify = dash.Dash(assets_folder="./static" ,external_stylesheets=[dbc.them
 
 navbar = dbc.Nav(className="nav nav-pills navbar-expand-lg navbar-light bg-ligth", children=[
     ## logo/home
-    dbc.NavItem(html.Img(src={"http://"+socket.gethostbyname(socket.gethostname())+"/static/mortgage.png"}, height="40px")),
+    dbc.NavItem(html.Img(src=link_picture, height="40px")),
     ## about
     dbc.Col(width="auto"),
     dbc.NavItem(html.Div([
